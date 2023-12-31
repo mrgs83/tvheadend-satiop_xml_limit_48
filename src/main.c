@@ -871,10 +871,10 @@ main(int argc, char **argv)
              *opt_subscribe    = NULL,
              *opt_user_agent   = NULL,
              *opt_satip_bindaddr = NULL;
-  static char *__opt_satip_xml[10];
-  str_list_t  opt_satip_xml    = { .max = 10, .num = 0, .str = __opt_satip_xml };
+  static char *__opt_satip_xml[48];
+  str_list_t  opt_satip_xml    = { .max = 48, .num = 0, .str = __opt_satip_xml };
   static char *__opt_satip_tsfile[10];
-  str_list_t  opt_tsfile       = { .max = 10, .num = 0, .str = __opt_satip_tsfile };
+  str_list_t  opt_tsfile       = { .max = 48, .num = 0, .str = __opt_satip_tsfile };
   cmdline_opt_t cmdline_opts[] = {
     {   0, NULL,        N_("Generic options"),         OPT_BOOL, NULL         },
     { 'h', "help",      N_("Show this page"),          OPT_BOOL, &opt_help    },
