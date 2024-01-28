@@ -1655,7 +1655,7 @@ new_tune:
 
   while (start != 3) {
 
-    nfds = tvhpoll_wait(efd, ev, 1, rtsp ? 55 : -1);
+    nfds = tvhpoll_wait(efd, ev, 1, rtsp ? 64 : -1);
 
     if (!satip_frontend_other_is_waiting(lfe)) start |= 2; else start &= ~2;
 
